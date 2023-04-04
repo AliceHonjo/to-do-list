@@ -28,8 +28,11 @@ h2{
     padding: 5px;
     height: 35px;
     width: 300px;
+    font-size: 16px;
    
 }
+
+
 
 .new-task button{
     border: 2px solid #ed1c24;
@@ -99,7 +102,7 @@ input:checked ~ .fake-checkbox::after{
     border: 2px solid #afd3f0;
     background-color: #afd3f0;
     position: relative;
-    top: -21px;
+    top: -16px;
     left: -1px;
     
 }
