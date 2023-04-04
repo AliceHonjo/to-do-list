@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    background-color:rgb(255,242,242);
+    
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    text-decoration:underline wavy;
+    text-decoration-color: #afd3f0;
+    color:#ed1c24;
+}
+
+h2{
+    color:#ed1c24;
+    text-align: left;
+    margin: 15px 15px;
+}
+
+.new-task input{
+    border: 4px double #ed1c24;
+    border-radius: 3px;
+    padding: 5px;
+    height: 35px;
+    width: 300px;
+   
+}
+
+.new-task button{
+    border: 2px solid #ed1c24;
+    cursor: pointer;
+}
+
+.task-box {
+    background-color: #FFFFE0 ;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #ed1c24;
+    margin: 15px;
+   
+}
+    
+.task-item {
+    display: flex;
+    align-items: center;
+    background-color: #FFFFE0;
+    margin: 10px 0;
+}
+
+.task-item p{
+    background-color: #FFFFE0;
+    margin: 0 10px;
+}
+
+.task-item button {
+    border: none;
+    color: #ed1c24;
+    cursor: pointer;
+}
+
+.task-item input{
+    cursor: pointer;
+    display: none;
+    background-color: #FFFFE0;
+}
+
+.complete{
+    text-decoration: line-through;
+}
+
+input [type="checkbox"] {
+   display: none;
+}
+
+.fake-checkbox{
+    width: 10px;
+    height: 10px;
+    border: 2px solid #afd3f0;
+    border-radius: 50%;
+    background-color: #FFFFE0;
+    cursor: pointer;
+   
+}
+
+.fake-checkbox::after{
+    display: block;
+    content:'';
+}
+
+input:checked ~ .fake-checkbox::after{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid #afd3f0;
+    background-color: #afd3f0;
+    position: relative;
+    top: -21px;
+    left: -1px;
+    
+}
+
+.fa-check{
+    background-color: #FFFFE0;
+    position: relative;
+    color: #FFFFE0;
+    border-radius: 50%;
+    width: 1px;
+    height: 1px;
+}
+
+@media(min-width: 992px){
+    .container{
+        width: 50%;
+        margin: 0 auto;
+    }
+}
